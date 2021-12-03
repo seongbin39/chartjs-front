@@ -1,9 +1,11 @@
 import React from 'react'
-import VerticalBarChart from './components/VerticalBarChart'
-import HorizontalBarChart from "./components/HorizontalBarChart"
+import VerticalBarChart from './components/BarChart/VerticalBarChart'
+import HorizontalBarChart from "./components/BarChart/HorizontalBarChart"
+import StackedBarChart from "./components/BarChart/StackedBarChart"
+import StackedBarChartWithGroups from "./components/BarChart/StackedBarChartWithGroups"
+import FloatingBarChart from "./components/BarChart/FloatingBarChart"
+import BarChartBoarderRadius from "./components/BarChart/BarChartBoarderRadius"
 import LineChart from "./components/LineChart"
-import StackedBarChart from "./components/StackedBarChart"
-import StackedBarChartWithGroups from "./components/StackedBarChartWithGroups"
 import Layout from './components/Layout'
 
 function App() {
@@ -14,6 +16,10 @@ function App() {
       <VerticalBarChart data={data} labels={labels}/>
       <HorizontalBarChart data={data} labels={labels}/>
       <LineChart data={data} labels={labels}/>
+      <StackedBarChart data={data} labels={labels}/>
+      <StackedBarChartWithGroups data={data} labels={labels}/>
+      <FloatingBarChart data={data} labels={labels}/>
+      <BarChartBoarderRadius data={data} labels={labels}/>
     </Layout>
   );
 }
