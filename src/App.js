@@ -6,6 +6,7 @@ import StackedBarChartWithGroups from "./components/BarChart/StackedBarChartWith
 import FloatingBarChart from "./components/BarChart/FloatingBarChart"
 import BarChartBoarderRadius from "./components/BarChart/BarChartBoarderRadius"
 import LineChart from "./components/LineChart/LineChart"
+import SteppedLineChart from "./components/LineChart/SteppedLineChart"
 import Layout from './components/Layout'
 
 function App() {
