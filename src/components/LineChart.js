@@ -1,17 +1,18 @@
 import Chart from 'chart.js/auto'
 import { useEffect, useRef } from 'react' 
 
-function LineChart (){
+function LineChart (props) {
+    const { data, labels } = props
     const canvasDom = useRef(null);
     useEffect(() => {
         const ctx = canvasDom.current.getContext('2d');
         const lineChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: [2018, 2019, 2020, 2021, 2022],
+                labels: labels,
                 datasets: [
                     {
-                        data: [1, 4, 2, 6, 9]
+                        data: data
                     }
                 ]
             }
